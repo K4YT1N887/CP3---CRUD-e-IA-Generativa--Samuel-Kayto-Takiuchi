@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus Jogos Favoritos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        
+        <section id="login-section" class="card">
+            <h2>Login</h2>
+            <p class="subtitle">Acesse sua lista de jogos</p>
+            
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" placeholder="Digite o usuário">
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" placeholder="Digite a senha">
+                </div>
+                
+                <div id="login-error" class="error-message hidden"></div>
+                
+                <button type="submit" class="btn btn-primary">Entrar</button>
+            </form>
+        </section>
+
+        <section id="dashboard-section" class="card hidden">
+            <header class="dashboard-header">
+                <div>
+                    <h2>Meus Jogos Favoritos</h2>
+                    <p class="subtitle">Gerencie sua coleção pessoal</p>
+                </div>
+                <button id="btn-logout" class="btn btn-danger">Sair</button>
+            </header>
+            
+            <div class="game-form">
+                <div class="input-group">
+                    <input type="text" id="game-input" placeholder="Nome do jogo favorito...">
+                </div>
+                
+                <div id="game-error" class="error-message hidden"></div>
+                
+                <div class="form-actions">
+                    <button id="btn-add-start" class="btn btn-secondary">Adicionar no Início</button>
+                    <button id="btn-add-end" class="btn btn-primary">Adicionar no Final</button>
+                </div>
+            </div>
+
+            <hr>
+
+            <ul id="games-list" class="games-list">
+                </ul>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
