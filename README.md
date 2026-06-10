@@ -1,0 +1,1 @@
+# CP3---CRUD-e-IA-Generativa--Samuel-Kayto-Takiuchi
